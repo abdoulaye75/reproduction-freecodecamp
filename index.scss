@@ -1,0 +1,103 @@
+$white: #fff;
+$black: #000;
+$darkgreen: darkgreen;
+$orange: #FFBD41;
+$sizelinks: 20px;
+$bold: bold;
+$sizeimages: 200px;
+$sizeparagraphs: 24px;
+$fontfamily: 'Lato', sans-serif;
+
+* {font-family: $fontfamily;}
+
+@mixin flex {
+	display: flex;
+	justify-content: center;
+}
+
+hr {color: $black;}
+
+.menu {
+	background-color: $darkgreen;
+
+	a {
+		color: $white;
+		font-weight: $bold;
+	}
+}
+
+.images {
+	h1 {
+		margin-top: 120px;
+		margin-bottom : 80px;
+	}
+
+	img {
+		width: $sizeimages;
+		height: $sizeimages;
+	}
+
+	p {font-size: $sizeparagraphs;}
+
+	a {
+		color: $darkgreen;
+		font-weight: $bold;
+	}
+
+	a:hover {color: $black;}
+}
+
+.button {
+	width: 100%;
+	background-color: $orange;
+	border: 1px solid $orange;
+	border-radius: 4px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+
+	a {
+		@include flex;
+		color: $black;		
+		font-size: 40px;
+	}
+
+	a:hover {
+		color: $black;
+		text-decoration: none;
+	}
+}
+
+.journals {
+	img {
+		margin: O auto;
+	}
+
+	p {font-size: $sizeparagraphs;}
+}
+
+.developers {
+	img {
+		height: $sizeimages;
+		width: $sizeimages;
+	}
+
+	p {font-size: 18px;}
+}
+
+.skills {
+	i {
+		color: $darkgreen;
+		font-size: 150px;
+	}
+
+	h1 {margin-bottom: 50px;}
+}
+
+.advantages {
+	li {
+		font-size: 24px;
+		line-height: 2em;
+	}
+
+	h2 {margin-bottom: 40px;}
+}
